@@ -1,0 +1,71 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 500px;
+	margin: 2em auto 0;
+	padding: 3em 5em;
+	background: linear-gradient( #d77d9a, #f7747b);	
+}
+
+h1 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+p {
+	margin: 0;
+}
+
+textarea {
+	height: 70px;
+	width: 100%;
+	background: transparent;
+	border: none;
+	padding: 10px 0 0 10px;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.box {
+	background: #fff;
+}
+
+.box-input {
+	border-radius: 10px 10px 0 0;
+	border-bottom: 2px dashed #555;
+}
+
+.box-output {
+	border-radius: 0 0 10px 10px;
+}
+
+.result {
+	padding: 10px;
+}
+
+.result-text {
+	outline: none;
+	cursor: default;
+	font-size: 1.2em;
+	margin-left: -10px;
+}
+
+button {
+	border: none;
+	color: #888;
+	margin: .5em 0;
+	background: #7a637e;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.align-right {
+	text-align: right;
+}

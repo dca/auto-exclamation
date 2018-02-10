@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>驚嘆號產生器</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1>驚嘆號<span class="text-white">！</span>產生器<span class="text-white">！</span></h1>
+      <div class="box box-input">
+        <textarea class="box-input-text" placeholder="請輸入文字..." v-model="message"></textarea>
+      </div>
+      <div class="box box-output">
+        <div class="result">
+          <textarea class="result-text" v-model="addedMessage"></textarea>
+          <p class="align-right"><button v-on:click="copy">複製文字</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="https://pulipulichen.github.io/jieba-js/require-jieba-js.js"></script>
+</body>
+</html>
