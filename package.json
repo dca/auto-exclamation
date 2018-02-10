@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel -p 8999 src/index.html",
-    "build": "NODE_ENV=production parcel build src/index.html",
-    "test": "npm run build"
+    "deploy": "rm -fr dist/; cp -f src/ dist/; gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,14 +16,8 @@
     "url": "https://github.com/dca/auto-exclamation/issues"
   },
   "homepage": "https://github.com/dca/auto-exclamation#readme",
-  "dependencies": {
-    "autoprefixer": "^7.2.5",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-runtime": "^6.26.0",
-    "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.4.1",
-    "postcss-modules": "^1.1.0"
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
